@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.symptom-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background: linear-gradient(45deg, #fefefe, #bedeff);
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.symptom-overlay{
+    max-width: 1000px;
+    padding: 30px;
+    margin: 30px auto;
+    background: linear-gradient(45deg, #6b5aff95, #8cdbff);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.symptom-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 2 columns */
+    grid-gap: 40px; /* Increase the space between the rows and columns */
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.symptom-checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+    margin-right: 30px;
+}
+
+input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+
+.symptom-submit{
+    margin: 30px auto;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #def0ff;
+}
+
+.symptom-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.symptoms-input {
+    margin-top: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px; 
+}
+.symptom-age-input{
+    max-width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+
+ .symptom-input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.symptom-gender{
+    max-width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+
+.symptom-logo{
+    width: 100px;
+}
