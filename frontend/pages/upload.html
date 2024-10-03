@@ -11,13 +11,13 @@
         <img src="../assets/lungs.png" alt="" class="upload-logo">
         <div class="container">
             <h1>Upload CT Scan</h1>
-            <form class="upload-form">
+            <form id="upload-form" class="upload-form" onsubmit="uploadImage(); return false;">
                 <label for="upload" class="labelclass">Choose Image</label>
                 <input type="file" id="upload" name="image_upload" accept="image/*" onchange="previewImage(event)">
                 <div class="preview-container">
                     <img id="preview" alt="Image Preview">
                 </div>
-                <button class="upload-button">
+                <button type="submit" class="upload-button">
                     <p>Upload</p>
                     <img src="../assets/upload.png" alt="" class="upload-img">
                 </button>
@@ -34,6 +34,29 @@
                 output.style.display = 'block';
             }
             reader.readAsDataURL(event.target.files[0]);
+        }
+        async function uploadImage() {
+            const form = document.getElementById('upload-form');
+            const formData = new FormData(form);
+
+            try{
+                response = await fetch('http://127.0.0.1:8000/model1/', {
+                    method: 'POST',
+                    body: formData,
+                });
+                console.log(response);
+                if (response.ok) {
+                    data = await response.json();
+                    alert(`Prediction: ${data.prediction}`);
+                }
+                else {
+                    alert('Error uploading image.');
+                }
+            }
+            catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred during upload.');
+            }
         }
     </script>
 </body>
