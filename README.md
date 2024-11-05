@@ -1,6 +1,6 @@
 # Lung Cancer Prediction System
 
-# Team 
+### Team 
 - [tims-exe](https://github.com/tims-exe)
 - [anupa00](https://github.com/anupa00)
 - [sreenandharamesh](https://github.com/sreenandharamesh)
