@@ -44,7 +44,7 @@ By combining these two approaches, the Lung Cancer Prediction System aims to enh
 
 ## Datasets
 
-- [https://www.kaggle.com/datasets/adityamahimkar/iqothnccd-lung-cancer-dataset]
-- [https://www.kaggle.com/datasets/nancyalaswad90/lung-cancer]
+- https://www.kaggle.com/datasets/adityamahimkar/iqothnccd-lung-cancer-dataset
+- https://www.kaggle.com/datasets/nancyalaswad90/lung-cancer
 
 
