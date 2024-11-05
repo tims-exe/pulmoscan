@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/symptoms_style.css">
+</head>
+<body onload="clear_storage()">
+    <div class="symptom-container">
+        <img src="../assets/lungs.png" alt="" class="symptom-logo">
+        <section class="symptom-overlay">
+            <div>
+                <h1>SYMPTOMS</h1>
+            </div>
+            <div>
+                <form id="symptomForm" class="symptom-form">
+                    <div class="symptoms-input">
+                        <div class="symptom-input-section">
+                            <p>Age:</p>
+                            <input type="number" id="age" class="symptom-age-input" placeholder="..." min="0" oninput="this.value = Math.abs(this.value)">
+                        </div>
+                        <div class="symptom-input-section">
+                            <p>Gender:</p>
+                            <select id="gender" name="gender" class="symptom-gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="symptom-list">
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="smoking" name="symptom" value="smoking">
+                            <label for="smoking">Smoking</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="yellow_fingers" name="symptom" value="yellow_fingers">
+                            <label for="yellow_fingers">Yellow Fingers</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="anxiety" name="symptom" value="anxiety">
+                            <label for="anxiety">Anxiety</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="peer_pressure" name="symptom" value="peer_pressure">
+                            <label for="peer_pressure">Peer Pressure</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="chronic_disease" name="symptom" value="chronic_disease">
+                            <label for="chronic_disease">Chronic Disease</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="fatigue" name="symptom" value="fatigue">
+                            <label for="fatigue">Fatigue</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="allergy" name="symptom" value="allergy">
+                            <label for="allergy">Allergy</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="wheezing" name="symptom" value="wheezing">
+                            <label for="wheezing">Wheezing</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="alcohol_consuming" name="symptom" value="alcohol_consuming">
+                            <label for="alcohol_consuming">Alcohol Consuming</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="coughing" name="symptom" value="coughing">
+                            <label for="coughing">Coughing</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="shortness_of_breath" name="symptom" value="shortness_of_breath">
+                            <label for="shortness_of_breath">Shortness of Breath</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="swallowing_difficulty" name="symptom" value="swallowing_difficulty">
+                            <label for="swallowing_difficulty">Swallowing Difficulty</label>
+                        </div>
+                        <div class="symptom-checkbox-item">
+                            <input type="checkbox" id="chest_pain" name="symptom" value="chest_pain">
+                            <label for="chest_pain">Chest Pain</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="symptom-submit">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="../scripts/symptoms_script.js">
+    </script>
+</body>
+</html>

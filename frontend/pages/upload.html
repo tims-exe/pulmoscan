@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload with Preview</title>
+    <link rel="stylesheet" href="../styles/upload_style.css">
+</head>
+<body>
+    <div class="main-container">
+        <img src="../assets/lungs.png" alt="" class="upload-logo">
+        <div class="container">
+            <h1>Upload CT Scan</h1>
+            <form id="upload-form" class="upload-form" onsubmit="uploadImage(); return false;">
+                <label for="upload" class="labelclass">Choose Image</label>
+                <input type="file" id="upload" name="image_upload" accept="image/*" onchange="previewImage(event)">
+                <div class="preview-container">
+                    <img id="preview" alt="Image Preview">
+                </div>
+                <button type="submit" class="upload-button">
+                    <p>Upload</p>
+                    <img src="../assets/upload.png" alt="" class="upload-img">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../scripts/upload_script.js"></script>
+</body>
+</html>
