@@ -1,5 +1,9 @@
 backend/venv
-train
 backend/test_project/models/model1.keras
 backend/test_project/models/model2.pkl
 .vscode
+train/model1/.ipynb_checkpoints
+train/model1/dataset
+train/model1/model1.keras
+train/model2/.ipynb_checkpoints
+train/model2/dataset
