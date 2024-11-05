@@ -2,6 +2,4 @@ backend/venv
 train
 backend/test_project/models/model1.keras
 backend/test_project/models/model2.pkl
-main
-main.pub
 .vscode
