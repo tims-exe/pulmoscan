@@ -1,10 +1,10 @@
 # Lung Cancer Prediction System
 
 # Team 
-- [https://github.com/tims-exe]
-- [https://github.com/anupa00]
-- [https://github.com/sreenandharamesh]
-- [https://github.com/NandanaMohan1501]
+- [tims-exe](https://github.com/tims-exe)
+- [anupa00](https://github.com/anupa00)
+- [sreenandharamesh](https://github.com/sreenandharamesh)
+- [NandanaMohan1501](https://github.com/NandanaMohan1501)
 
 ## Overview
 
